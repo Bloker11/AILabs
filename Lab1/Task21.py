@@ -1,5 +1,4 @@
-listComponent = [5, 10, 15, 20, 25, 30]
-listComponent.append(35)
+listComponent = [5, 10, 15, 20, 25, 30, 35]
 listComponent.reverse()
 print(listComponent)
 
@@ -8,6 +7,9 @@ print(middleNumber)
 listComponent.pop(middleNumber)
 print(listComponent)
 
+print(sum(listComponent))
+print(max(listComponent))
+print(sum(listComponent)/(len(listComponent)))
 
 
 
