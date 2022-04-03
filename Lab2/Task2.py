@@ -7,10 +7,10 @@ df = pd.read_csv("iris.csv")
 random_state=51139)
 
 def classify_iris(sl, sw, pl, pw):
-    if 4.5 <= sl <= 5.8 and 0.1 <= pw <= 0.6 and 1.9 >= pl >= 1.1 and 2.9 <= sw <= 3.9:
+    if pw <= 0.6:
         return("Setosa")
-    elif 4.8 <= pl <= 6.9 and 2.5 <= sw <= 4.8 and 5.9 <= sl <= 7.7 and 1.5 <= pw <= 2.5:
-        return("Virgnica")
+    elif pw >= 1.7:
+        return("Virginica")
     else:
         return("Versicolor")
 
