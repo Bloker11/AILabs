@@ -7,7 +7,7 @@ df = pd.read_csv("iris.csv")
 all_inputs = df[['sepal.length', 'sepal.width', 'petal.length', 'petal.width']].values
 all_classes = df['variety'].values
 
-(train_inputs, test_inputs, train_classes, test_classes) = train_test_split(all_inputs, all_classes, train_size=0.7, random_state=1)
+(train_inputs, test_inputs, train_classes, test_classes) = train_test_split(all_inputs, all_classes, train_size=0.7, random_state=51139)
 
 
 dfc = tree.DecisionTreeClassifier()
